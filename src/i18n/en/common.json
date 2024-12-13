@@ -1,4 +1,18 @@
 {
+  "content": {
+    "home": {
+      "title": "Watch The Latest Article",
+      "description": "Start to plan your best outdoor adventure",
+      "mainButtonText": "Let's go!"
+    }
+  },
+  "menu": {
+    "Home": "Home",
+    "About": "About",
+    "Blog": "Blog",
+    "Equipment": "Equipment",
+    "Schedule": "Schedule"
+  },
   "email": "Email",
   "password": "Password",
   "register": "Register"

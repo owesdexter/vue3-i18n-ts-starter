@@ -1,4 +1,18 @@
 {
+  "content": {
+    "home": {
+      "title": "Watch The Latest Article",
+      "description": "Start to plan your best outdoor adventure",
+      "mainButtonText": "Let's go!"
+    }
+  },
+  "menu": {
+    "Home": "首頁",
+    "About": "關於",
+    "Blog": "文章",
+    "Equipment": "裝備",
+    "Schedule": "行程"
+  },
   "email": "電子郵件",
   "password": "密碼",
   "register": "註冊"

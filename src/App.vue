@@ -4,7 +4,7 @@
 
     <div class="wrapper">
       <Navbar />
-      <Button label="Verify" @click="console.log('Verify')" />
+      <!-- <Button label="Verify" @click="console.log('Verify')" /> -->
       <!-- <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
@@ -18,6 +18,6 @@
 </template>
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import Navbar from './layout/navbarComp.vue'
-import Button from 'primevue/button'
+import Navbar from '@/components/layout/navbarComp.vue'
+// import Button from 'primevue/button'
 </script>

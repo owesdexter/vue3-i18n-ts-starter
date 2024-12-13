@@ -7,6 +7,7 @@ import { createPinia } from 'pinia'
 
 // Vuetify & Styles
 import './assets/scss/main.scss'
+import 'primeicons/primeicons.css'
 import PrimeVue from 'primevue/config'
 import { definePreset } from '@primevue/themes'
 import Aura from '@primevue/themes/aura'
@@ -35,7 +36,7 @@ app.use(router)
 app.use(i18n)
 app.use(PrimeVue, {
   theme: {
-    unstyled: true,
+    // unstyled: true,
     preset: MyPreset,
     options: {
       prefix: 'p', // 前綴，預設為 p

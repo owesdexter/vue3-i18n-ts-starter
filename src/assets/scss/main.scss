@@ -2,15 +2,11 @@ $primary: #fff;
 $secondary: #000;
 $info: #d9d9d9;
 
-@use './reset';
+// @use './reset';
 // @tailwind base;
 // @import 'primevue/resources/themes/saga-blue/theme.css'; // Example theme
 // @tailwind components;
 // @tailwind utilities;
-
-* {
-  color: #000;
-}
 
 .translate-50p {
   transform: translate(-50%, -50%);
@@ -18,6 +14,21 @@ $info: #d9d9d9;
 
 #app {
   background-color: $primary;
+}
+
+.my-fade-in {
+  opacity: 0;
+  animation: 2.5s fadeIn forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @layer tailwind-base, primevue, tailwind-utilities;
@@ -29,4 +40,7 @@ $info: #d9d9d9;
 @layer tailwind-utilities {
   @tailwind components;
   @tailwind utilities;
+}
+* {
+  color: #000;
 }
