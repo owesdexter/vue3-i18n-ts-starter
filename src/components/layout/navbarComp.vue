@@ -1,9 +1,14 @@
 <template>
-  <div class="fixed w-full">
+  <div class="w-full">
     <Menubar
       :model="websiteMenu"
       breakpoint="768px"
-      class="bg-transparent border-0 flex justify-center"
+      class="bg-transparent border-0 flex md:justify-center justify-between"
+      :pt="{
+        itemContent: {
+          class: 'hover:bg-transparent',
+        },
+      }"
     >
       <template #item="{ item, props }">
         <router-link
@@ -22,6 +27,7 @@
           >
             <span>{{ $t(item.title) }}</span>
           </a>
+          <!-- {{ $t(item.title) }} -->
         </router-link>
       </template>
     </Menubar>

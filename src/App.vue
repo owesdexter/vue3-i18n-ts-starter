@@ -4,17 +4,11 @@
 
     <div class="wrapper">
       <Navbar />
-      <!-- <Button label="Verify" @click="console.log('Verify')" /> -->
-      <!-- <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/about">{{ $t('email') }}</RouterLink>
-        
-      </nav> -->
     </div>
   </header>
-
-  <RouterView />
+  <main>
+    <RouterView />
+  </main>
 </template>
 <script setup lang="ts">
 import { RouterView } from 'vue-router'

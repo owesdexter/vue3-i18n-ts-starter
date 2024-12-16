@@ -7,7 +7,7 @@ $info: #d9d9d9;
 // @import 'primevue/resources/themes/saga-blue/theme.css'; // Example theme
 // @tailwind components;
 // @tailwind utilities;
-
+$navbar-height: 3.5rem;
 .translate-50p {
   transform: translate(-50%, -50%);
 }
@@ -16,9 +16,21 @@ $info: #d9d9d9;
   background-color: $primary;
 }
 
+body {
+  height: 100vh;
+  main {
+    height: calc(100vh - $navbar-height);
+  }
+}
+
 .my-fade-in {
   opacity: 0;
   animation: 2.5s fadeIn forwards;
+}
+
+.my-fade-out {
+  opacity: 0;
+  animation: 2s fadeOut forwards;
 }
 
 @keyframes fadeIn {
@@ -28,6 +40,16 @@ $info: #d9d9d9;
 
   to {
     opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
   }
 }
 
