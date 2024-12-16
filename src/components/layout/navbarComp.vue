@@ -2,11 +2,11 @@
   <div class="w-full">
     <Menubar
       :model="websiteMenu"
-      breakpoint="768px"
+      breakpoint="640px"
       class="bg-transparent border-0 flex md:justify-center justify-between"
       :pt="{
         itemContent: {
-          class: 'hover:bg-transparent',
+          class: 'bg-transparent hover:bg-transparent',
         },
       }"
     >

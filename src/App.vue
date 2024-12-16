@@ -6,7 +6,7 @@
       <Navbar />
     </div>
   </header>
-  <main>
+  <main class="relative">
     <RouterView />
   </main>
 </template>
