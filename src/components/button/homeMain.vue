@@ -10,9 +10,7 @@
   </Button>
 </template>
 <script setup lang="ts">
-import { ref } from 'vue'
 import Button from 'primevue/button'
-//
 const props = defineProps({
   btnText: {
     type: String,

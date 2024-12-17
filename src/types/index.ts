@@ -1,4 +1,4 @@
-// export * from './parentInfo';
+export * from './sports'
 
 export type TMeta = {
   title: string

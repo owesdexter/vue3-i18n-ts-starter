@@ -20,6 +20,12 @@ body {
   height: 100vh;
   main {
     height: calc(100vh - $navbar-height);
+    &.page-home {
+      height: 100vh;
+      // background format with size is cover and position is center center
+      // background: url('@/assets/images/1.png') no-repeat center center;
+      // background-size: cover;
+    }
   }
 }
 
@@ -51,6 +57,10 @@ body {
   to {
     opacity: 0;
   }
+}
+
+* {
+  color: black;
 }
 
 @layer tailwind-base, primevue, tailwind-utilities;
