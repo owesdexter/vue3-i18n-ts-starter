@@ -6,7 +6,7 @@ export type TMeta = {
 
 export type TRoutesItem = {
   path: string
-  name: string
+  name?: string
   meta?: TMeta
   component?: () => Promise<typeof import('*.vue')>
   children?: TRoutesItem[]

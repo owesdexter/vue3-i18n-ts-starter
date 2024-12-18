@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import BlogView from '../views/BlogView.vue'
+import HomeView from '../views/home.vue'
+// import BlogView from '../views/BlogView.vue'
+import BlogHome from '../views/blog/index.vue'
+import ArticleView from '../views/blog/[id].vue'
 import AboutView from '../views/AboutView.vue'
 import { type TRoutesItem, type TMenuItem } from '@/types'
 // import EquipmentView from '../views/EquipmentView.vue'
@@ -12,11 +14,24 @@ const navRoutes: TRoutesItem[] = [
     component: HomeView,
     meta: { title: 'menu.Home' },
   },
+  // {
+  //   path: '/blog',
+  //   name: 'blog',
+  //   component: BlogView,
+  //   meta: { title: 'menu.Blog' },
+  // },
   {
     path: '/blog',
-    name: 'blog',
-    component: BlogView,
     meta: { title: 'menu.Blog' },
+    children: [
+      { path: '', name: 'blog', meta: { title: 'menu.Blog' }, component: BlogHome },
+      {
+        path: ':id',
+        name: 'article',
+        meta: { title: 'menu.DataTranslation' },
+        component: ArticleView,
+      },
+    ],
   },
   // {
   //   path: '/equipment',
@@ -39,6 +54,10 @@ const navRoutes: TRoutesItem[] = [
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: navRoutes,
+  scrollBehavior(to, from, savedPosition) {
+    // always scroll to top
+    return { top: 0 }
+  },
 })
 
 const removeAttrComponentFromRoutes = (routes: TRoutesItem[], parentPath?: string): TMenuItem[] =>
