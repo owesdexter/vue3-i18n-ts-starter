@@ -12,11 +12,10 @@ export type TRoutesItem = {
   children?: TRoutesItem[]
 }
 
-export type TMenuItem = TMeta & Omit<TRoutesItem, 'children'> & { children?: TMenuItem[] }
+export type TMenuItem = TMeta & TRoutesItem & { children?: TMenuItem[] }
 
 export type TBreadcrumbItem = {
   title: string
   name: string
   path: string
-  groupTitle?: string
 }

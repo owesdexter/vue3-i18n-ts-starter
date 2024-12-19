@@ -24,7 +24,7 @@ const navRoutes: TRoutesItem[] = [
     path: '/blog',
     meta: { title: 'menu.Blog' },
     children: [
-      { path: '', name: 'blog', meta: { title: 'menu.Blog' }, component: BlogHome },
+      { path: '', name: 'blogHome', meta: { title: 'menu.Blog' }, component: BlogHome },
       {
         path: ':id',
         name: 'article',
