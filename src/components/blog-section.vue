@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div class="blog">
-    <h1 class="text-black">BB-ID</h1>
+    <h1 class="text-black">{{ content.title }}</h1>
   </div>
 </template>
 <script lang="ts" setup>

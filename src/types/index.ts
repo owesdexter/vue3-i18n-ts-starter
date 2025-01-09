@@ -1,4 +1,5 @@
 export * from './sports'
+export * from './pixnet'
 
 export type TMeta = {
   title: string
