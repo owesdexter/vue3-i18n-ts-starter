@@ -2,6 +2,7 @@
 <template>
   <div class="blog">
     <h1 class="text-black">BB-Home</h1>
+    <p>{{ $t('global.menu.Home')}}</p>
   </div>
 </template>
 <script lang="ts" setup>
